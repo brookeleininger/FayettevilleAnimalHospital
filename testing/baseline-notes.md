@@ -1,28 +1,28 @@
-# CrawlMetric Clean Baseline
+# CrawlMetric Expanded Clean Baseline
 
-This repository is the known-good baseline for the future CrawlMetric controlled testing environment. It intentionally uses sound semantic, accessibility, indexing, navigation, metadata, and responsive-design practices. No test defects have been introduced.
+This repository contains the expanded, technically clean baseline for the future CrawlMetric controlled testing environment. It contains **60 indexable HTML pages** and intentionally includes no test defects.
 
-## Baseline scope
+## Architecture
 
-- Five static, internally linked HTML pages
-- Unique page titles and meta descriptions
-- One canonical URL per page using the reserved `.example` domain
-- Semantic landmarks and logical heading structures
-- Descriptive alternative text for meaningful images
-- Labeled, keyboard-accessible prototype form controls
-- Responsive navigation and reduced-motion support
-- Valid `robots.txt` and XML sitemap structure
-- Original generated imagery stored locally in `/images`
-- Lightweight, dependency-free JavaScript
+- 5 core pages: Home, About, Services, Resources, and Contact
+- 12 detailed service pages under `/services/`
+- 6 life-stage guides under `/pet-care/`
+- 20 owner education articles under `/resources/articles/`
+- 8 care and condition guides under `/resources/conditions/`
+- 4 fictional team profiles under `/team/`
+- 5 visit-planning and supporting pages at the site root
 
-## Important deployment note
+The architecture uses hub-and-spoke internal linking. Services, Resources, and About are primary hubs; deeper pages include breadcrumbs, contextual links, related content, and appointment pathways. The main navigation remains intentionally compact.
 
-Before a real deployment, replace `https://fayettevilleanimalhospital.example` in canonical tags, `robots.txt`, and `sitemap.xml` with the final public origin. The `.example` domain is deliberately non-production and prevents this fictional project from being confused with a real clinic.
+## Clean-baseline status
 
-## Prototype behavior
+- Unique titles, meta descriptions, H1s, and canonical URLs are required sitewide.
+- Canonicals use `https://brookeleininger.github.io/FayettevilleAnimalHospital/`.
+- Relative links and assets support GitHub Pages project hosting.
+- `robots.txt` allows crawling and points to the full XML sitemap.
+- The fictional-practice disclosure appears in the footer throughout the expanded templates.
+- No intentional SEO, accessibility, indexability, schema, link, or content defects have been introduced.
 
-The appointment form is front-end only. Submission is intercepted in the browser, a confirmation is displayed, and no personal information is transmitted or stored.
+## CrawlMetric workflow
 
-## Future testing
-
-Record every controlled defect in `test-matrix.md` before introducing it. Preserve this clean state in version control so experiments remain reversible and measurable.
+This expanded site is intended to be crawled with Screaming Frog and recorded as the clean baseline before any controlled defects are added. Preserve this state in version control so later experiments remain reversible and measurable. Record every future controlled issue in `test-matrix.md` before implementation.
