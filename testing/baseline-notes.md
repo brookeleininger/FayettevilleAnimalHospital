@@ -26,3 +26,11 @@ The architecture uses hub-and-spoke internal linking. Services, Resources, and A
 ## CrawlMetric workflow
 
 This expanded site is intended to be crawled with Screaming Frog and recorded as the clean baseline before any controlled defects are added. Preserve this state in version control so later experiments remain reversible and measurable. Record every future controlled issue in `test-matrix.md` before implementation.
+
+## Controlled Defect Phase
+
+The clean 60-page baseline was preserved separately before this project entered the controlled-defect phase. A clean Screaming Frog crawl was also saved before modification.
+
+This working version now contains exactly 50 intentionally planted defects covering titles and descriptions, headings and content, images and alternative text, links and response-code behavior, canonicals and indexability, sitemap and crawlability, internal architecture, structured data, and file-level performance concerns. The complete ground-truth answer key is maintained in `testing/test-matrix.md` as CM-001 through CM-050.
+
+The visual design, responsive layout, branding, imagery style, and fictional-practice disclosure were intentionally preserved. This version is the pre-CrawlMetric “bad” website and is intentionally **not SEO clean**. The documented defects must remain in place until the CrawlMetric detection and approved-remediation stages of the experiment.

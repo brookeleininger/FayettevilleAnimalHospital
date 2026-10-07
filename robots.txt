@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /FayettevilleAnimalHospital/resources/articles/heartworm-arkansas.html
 
 Sitemap: https://fayettevilleanimalhospital.example/sitemap.xml
